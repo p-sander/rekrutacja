@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 class PrinterTest {
 
     @Test
-    void shouldPrint10Rows(){
+    void shouldPrint10Rows() {
 
         int count = 0;
 
@@ -21,7 +21,7 @@ class PrinterTest {
     }
 
     @Test
-    void shouldPrintDefaultString(){
+    void shouldPrintDefaultString() {
 
         assertEquals("*", new Printer().getFirstRow().toString());
         assertEquals("***", new Printer().getSecondRow().toString());
@@ -29,7 +29,7 @@ class PrinterTest {
     }
 
     @Test
-    void shouldAppendCorrectly(){
+    void shouldAppendCorrectly() {
 
         Printer printer = new Printer();
         printer.printStars(3);
@@ -40,7 +40,7 @@ class PrinterTest {
     }
 
     @Test
-    void shouldAppend(){
+    void shouldAppend() {
 
         Printer printer = new Printer();
         printer.printStars(4);
@@ -51,23 +51,23 @@ class PrinterTest {
     }
 
     @Test
-    void shouldCheckLengthCorrectly(){
+    void shouldCheckLengthCorrectly() {
 
         Printer printer = new Printer();
 
-        assertEquals(1,printer.getFirstRow().length());
-        assertEquals(3,printer.getSecondRow().length());
+        assertEquals(1, printer.getFirstRow().length());
+        assertEquals(3, printer.getSecondRow().length());
 
     }
 
     @Test
-    void shouldUpdateLengthCorrectly(){
+    void shouldUpdateLengthCorrectly() {
 
         Printer printer = new Printer();
         printer.printStars(4);
 
-        assertEquals(5,printer.getFirstRow().length());
-        assertEquals(7,printer.getSecondRow().length());
+        assertEquals(5, printer.getFirstRow().length());
+        assertEquals(7, printer.getSecondRow().length());
 
     }
 
